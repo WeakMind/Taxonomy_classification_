@@ -38,7 +38,7 @@ for sheet_name in MDB_data.sheet_names:
 
 combined_data = pd.concat(sheet_data_list,ignore_index=True)
 os.mkdir("mount_dir")
-combined_data.to_csv("./temp2.csv",index=False,header=True)
+combined_data.to_csv("./mount_dir/temp2.csv",index=False,header=True)
 # return
 # combined_data.shape
 
