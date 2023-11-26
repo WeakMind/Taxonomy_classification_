@@ -37,7 +37,7 @@ for sheet_name in MDB_data.sheet_names:
 
 combined_data = pd.concat(sheet_data_list,ignore_index=True)
 
-combined_data.to_csv("/home/ec2-user/temp.csv",index=False,header=True)
+combined_data.to_csv("./temp.csv",index=False,header=True)
 # return
 # combined_data.shape
 
