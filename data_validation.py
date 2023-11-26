@@ -8,15 +8,15 @@ Original file is located at
 """
 
 import pandas as pd
-from IPython.display import display
-from gensim.utils import simple_preprocess
+# from IPython.display import display
+# from gensim.utils import simple_preprocess
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
 # test = pd.ExcelFile('./Testing_data_processed.xlsx')
 # test_df = pd.read_excel(test)
 
-test = pd.ExcelFile('/content/Dummy_Data_Testing.xlsx')
+test = pd.ExcelFile('./MDB_Dataset_Final.xlsx')
 test_df = pd.read_excel(test)
 
 
@@ -37,7 +37,7 @@ for sheet_name in MDB_data.sheet_names:
 
 combined_data = pd.concat(sheet_data_list,ignore_index=True)
 
-combined_data.to_csv("/home/ec2-user/temp.csv",index=False,header=True)
+combined_data.to_csv("./temp.csv",index=False,header=True)
 # return
 # combined_data.shape
 
