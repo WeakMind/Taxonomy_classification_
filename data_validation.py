@@ -8,6 +8,7 @@ Original file is located at
 """
 
 import pandas as pd
+import os
 # from IPython.display import display
 # from gensim.utils import simple_preprocess
 pd.set_option('display.max_columns', None)
@@ -36,7 +37,7 @@ for sheet_name in MDB_data.sheet_names:
   sheet_data_list.append(data)
 
 combined_data = pd.concat(sheet_data_list,ignore_index=True)
-
+os.mkdir("mount_dir")
 combined_data.to_csv("./temp2.csv",index=False,header=True)
 # return
 # combined_data.shape
