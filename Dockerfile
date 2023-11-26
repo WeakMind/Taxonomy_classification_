@@ -16,5 +16,3 @@ EXPOSE 80
 # Run app.py when the container launches
 CMD ["python", "data_validation.py"]
 
-COPY /app/temp2.csv /home/ec2-user/
-
