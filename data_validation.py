@@ -19,6 +19,7 @@ pd.set_option('display.max_rows', None)
 test = pd.ExcelFile('/content/Dummy_Data_Testing.xlsx')
 test_df = pd.read_excel(test)
 
+
 a = 'gfhh'
 
 str(a)[:2]=='gf'
@@ -36,6 +37,8 @@ for sheet_name in MDB_data.sheet_names:
 
 combined_data = pd.concat(sheet_data_list,ignore_index=True)
 
+combined_data.to_csv("temp.csv",index=False,header=True)
+return
 combined_data.shape
 
 combined_data.isna().sum()*100/combined_data.shape[0]
