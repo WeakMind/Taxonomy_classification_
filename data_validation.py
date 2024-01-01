@@ -25,7 +25,7 @@ test_df = pd.read_excel(test)
 a = 'gfhh'
 
 str(a)[:2]=='gf'
-
+print("sherrrrrrrr chetaahhhhh")
 test_df.shape
 
 MDB_data = pd.ExcelFile('./MDB_Dataset_Final.xlsx')
